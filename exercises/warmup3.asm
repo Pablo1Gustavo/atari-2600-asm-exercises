@@ -11,7 +11,7 @@ START:
     LDA #15     ; Load the A register with the literal decimal value 15
     TAX         ; Transfer the value from A to X
     TAY         ; Transfer the value from A to Y
-    TAX         ; Transfer the value from X to A
+    TXA         ; Transfer the value from X to A
     TYA         ; Transfer the value from Y to A
 
     LDX #6      ; Load X with the decimal value 6

@@ -11,7 +11,7 @@
 START:
     LDA #$82    ; Load the A register with the literal hexadecimal value $82
     LDX #82     ; Load the X register with the literal decimal value 82
-    STY $82     ; Load the Y register with the value that is inside memory position $82
+    LDY $82     ; Load the Y register with the value that is inside memory position $82
 
     JMP START
 

@@ -1,5 +1,5 @@
     PROCESSOR 6502
-    SEG CODE
+    SEG CODE 
     ORG $F000
 
 ;|----------------------------------------------------------
@@ -15,10 +15,7 @@ LOOP:
     TYA         ; Transfer Y to A
     STA $80,Y   ; Store the value in A inside memory position $80+Y
     DEY         ; Decrement Y
-    BNE LOOP    ; Branch back to "Loop" until we are done
-
-    TYA         ; Transfer Y to A
-    STA $80     ; Finish loop storing the A value in memory position $80
+    BPL LOOP    ; Branch back to "Loop" until we are done
 
     JMP START
 

@@ -14,10 +14,12 @@ START:
 
     INX         ; Increment X
     INY         ; Increment Y
+    CLC
     ADC #1      ; Increment A
 
     DEX         ; Decrement X
     DEY         ; Decrement Y
+    SEC
     SBC #1      ; Decrement A
 
     JMP START
